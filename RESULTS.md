@@ -1036,3 +1036,58 @@ quick consensus, the broader tool wins.
   a more lenient judge might give codedb 4/5 instead of 3/5 on T2
   (since the asked-for "2-3 sites" was satisfied).
 
+---
+
+## §17 — codegraph added as a 5th backend (5-way QD matrix)
+
+Following community interest in `@colbymchenry/codegraph` (8.4k★, TS+SQLite+tree-sitter MCP — the closest sibling to codedb in spirit), it has been added as a fifth backend.
+
+Same 16 tasks × 4 corpora (react / regex / flask / gin), single rep per cell, judged by Claude Sonnet 4.5 against ground truth.
+
+### Headline: two backends are Pareto-optimal
+
+| backend | quality (/5) | tokens | wall (s) | status |
+|---|---|---|---|---|
+| **codedb** | 4.70 | 16,717 | **16.6** | **PARETO-OPTIMAL** |
+| **codegraph** | 4.44 | **6,929** | 48.9 | **PARETO-OPTIMAL** |
+| codedb_LEAN | 4.33 | 24,474 | 108.0 | dominated by codedb, codegraph |
+| fts5_trigram | 4.25 | 17,511 | 28.6 | dominated by codedb |
+| leanctx | 4.00 | 18,370 | 43.3 | dominated by codedb, fts5_trigram |
+
+Neither codedb nor codegraph dominates the other:
+- **codedb** wins on quality and wall time (faster end-to-end).
+- **codegraph** wins on tokens — its avg agent consumes <½ the tokens codedb's does.
+- **Tokens per quality-point**: codegraph **1,562** vs codedb **3,558** — codegraph is ~2.3× more token-efficient per quality unit, at the cost of slightly lower quality and ~3× wall time.
+
+### MAP-Elites grid (5 backends × 5 behavioral niches)
+
+| niche | codedb | fts5 | leanctx | codegraph |
+|---|---|---|---|---|
+| uncategorized | **5.00** / 17,199 / 26.5s | 5.00 / 15,580 / 39s | 4.50 / 19,791 / 106s | 5.00 / *10,250* / 60s |
+| symbol-lookup | **5.00** / 14,846 / 21s | 5.00 / 14,299 / 12s | 5.00 / 15,625 / 12s | 5.00 / *450* / 8s |
+| trace | 4.50 / 17,140 / 18s | 4.00 / 18,488 / 32s | 3.00 / 16,560 / 22s | **5.00** / *7,800* / 35s |
+| pattern-find | **4.00** / 15,175 / 2s | 3.00 / 17,971 / 28s | 3.00 / 18,029 / 28s | 4.00 / *3,000* / 45s |
+| comparison | **5.00** / 15,029 / 5s | 5.00 / 15,921 / 18s | 5.00 / 15,162 / 12s | 4.00 / *2,400* / 18s |
+
+**Niche-win count**: codedb 4/5 on quality, codegraph 1/5 on quality + **5/5 on tokens**. The two backends are stylistically opposed: codedb sells precision and speed, codegraph sells minimal token surface.
+
+### Per-corpus quality (mean /5)
+
+| corpus | codedb | codegraph | fts5 | leanctx |
+|---|---|---|---|---|
+| react (T*) | 4.50 | 4.50 | **5.00** | 4.25 |
+| regex (R*) | **4.50** | 4.25 | 3.75 | 4.25 |
+| flask (F*) | **4.75** | 4.25 | **4.75** | 3.50 |
+| gin (G*) | **4.75** | **4.75** | 3.50 | 4.00 |
+
+codedb and codegraph tie on react and gin; codedb edges codegraph on regex and flask. FTS5 has the only outright corpus win (react) — at the cost of last-place finishes on regex and gin.
+
+### Reproducibility
+
+- `eval/backends.json` — all 5 backend definitions + constraint prompts.
+- `eval/tasks.json` — 16-task spec (4 each on react / regex / flask / gin).
+- `eval/qd_matrix.md` / `qd_matrix.json` — full per-task/backend results.
+- `eval/matrix.py` — renders the QD matrix from `answers/` + `scores/` (not mirrored here — those contain raw agent responses).
+- `eval/judge.py` — single-cell rubric scorer.
+
+To reproduce: install `codedb` (this repo's main package), `@colbymchenry/codegraph` (npm), `lean-ctx`, and have `sqlite3` available. Index each corpus with the respective tool, then drive the eval harness.
