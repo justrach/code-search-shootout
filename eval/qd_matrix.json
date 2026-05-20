@@ -21,8 +21,7 @@
     "codedb",
     "codedb_LEAN",
     "fts5_trigram",
-    "leanctx",
-    "codegraph"
+    "leanctx"
   ],
   "cells": [
     {
@@ -1090,942 +1089,6 @@
     },
     {
       "task": "F0_url_for",
-      "backend": "codedb",
-      "quality": {
-        "n": 1,
-        "mean": 5,
-        "median": 5,
-        "stdev": 0.0,
-        "min": 5,
-        "max": 5
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 14846,
-        "median": 14846,
-        "stdev": 0.0,
-        "min": 14846,
-        "max": 14846
-      },
-      "wall": {
-        "n": 1,
-        "mean": 22,
-        "median": 22,
-        "stdev": 0.0,
-        "min": 22,
-        "max": 22
-      },
-      "calls": {
-        "n": 1,
-        "mean": 8,
-        "median": 8,
-        "stdev": 0.0,
-        "min": 8,
-        "max": 8
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "F0_url_for",
-      "backend": "fts5_trigram",
-      "quality": {
-        "n": 1,
-        "mean": 5,
-        "median": 5,
-        "stdev": 0.0,
-        "min": 5,
-        "max": 5
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 13077,
-        "median": 13077,
-        "stdev": 0.0,
-        "min": 13077,
-        "max": 13077
-      },
-      "wall": {
-        "n": 1,
-        "mean": 12,
-        "median": 12,
-        "stdev": 0.0,
-        "min": 12,
-        "max": 12
-      },
-      "calls": {
-        "n": 1,
-        "mean": 6,
-        "median": 6,
-        "stdev": 0.0,
-        "min": 6,
-        "max": 6
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "F0_url_for",
-      "backend": "leanctx",
-      "quality": {
-        "n": 1,
-        "mean": 5,
-        "median": 5,
-        "stdev": 0.0,
-        "min": 5,
-        "max": 5
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 13958,
-        "median": 13958,
-        "stdev": 0.0,
-        "min": 13958,
-        "max": 13958
-      },
-      "wall": {
-        "n": 1,
-        "mean": 18,
-        "median": 18,
-        "stdev": 0.0,
-        "min": 18,
-        "max": 18
-      },
-      "calls": {
-        "n": 1,
-        "mean": 6,
-        "median": 6,
-        "stdev": 0.0,
-        "min": 6,
-        "max": 6
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "F1_route_decorator_trace",
-      "backend": "codedb",
-      "quality": {
-        "n": 1,
-        "mean": 5,
-        "median": 5,
-        "stdev": 0.0,
-        "min": 5,
-        "max": 5
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 15070,
-        "median": 15070,
-        "stdev": 0.0,
-        "min": 15070,
-        "max": 15070
-      },
-      "wall": {
-        "n": 1,
-        "mean": 18,
-        "median": 18,
-        "stdev": 0.0,
-        "min": 18,
-        "max": 18
-      },
-      "calls": {
-        "n": 1,
-        "mean": 7,
-        "median": 7,
-        "stdev": 0.0,
-        "min": 7,
-        "max": 7
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "F1_route_decorator_trace",
-      "backend": "fts5_trigram",
-      "quality": {
-        "n": 1,
-        "mean": 4,
-        "median": 4,
-        "stdev": 0.0,
-        "min": 4,
-        "max": 4
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 18488,
-        "median": 18488,
-        "stdev": 0.0,
-        "min": 18488,
-        "max": 18488
-      },
-      "wall": {
-        "n": 1,
-        "mean": 38,
-        "median": 38,
-        "stdev": 0.0,
-        "min": 38,
-        "max": 38
-      },
-      "calls": {
-        "n": 1,
-        "mean": 11,
-        "median": 11,
-        "stdev": 0.0,
-        "min": 11,
-        "max": 11
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "F1_route_decorator_trace",
-      "backend": "leanctx",
-      "quality": {
-        "n": 1,
-        "mean": 3,
-        "median": 3,
-        "stdev": 0.0,
-        "min": 3,
-        "max": 3
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 13877,
-        "median": 13877,
-        "stdev": 0.0,
-        "min": 13877,
-        "max": 13877
-      },
-      "wall": {
-        "n": 1,
-        "mean": 18,
-        "median": 18,
-        "stdev": 0.0,
-        "min": 18,
-        "max": 18
-      },
-      "calls": {
-        "n": 1,
-        "mean": 8,
-        "median": 8,
-        "stdev": 0.0,
-        "min": 8,
-        "max": 8
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "F2_before_request_sites",
-      "backend": "codedb",
-      "quality": {
-        "n": 1,
-        "mean": 4,
-        "median": 4,
-        "stdev": 0.0,
-        "min": 4,
-        "max": 4
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 15175,
-        "median": 15175,
-        "stdev": 0.0,
-        "min": 15175,
-        "max": 15175
-      },
-      "wall": {
-        "n": 1,
-        "mean": 4,
-        "median": 4,
-        "stdev": 0.0,
-        "min": 4,
-        "max": 4
-      },
-      "calls": {
-        "n": 1,
-        "mean": 6,
-        "median": 6,
-        "stdev": 0.0,
-        "min": 6,
-        "max": 6
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "F2_before_request_sites",
-      "backend": "fts5_trigram",
-      "quality": {
-        "n": 1,
-        "mean": 5,
-        "median": 5,
-        "stdev": 0.0,
-        "min": 5,
-        "max": 5
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 17971,
-        "median": 17971,
-        "stdev": 0.0,
-        "min": 17971,
-        "max": 17971
-      },
-      "wall": {
-        "n": 1,
-        "mean": 18,
-        "median": 18,
-        "stdev": 0.0,
-        "min": 18,
-        "max": 18
-      },
-      "calls": {
-        "n": 1,
-        "mean": 8,
-        "median": 8,
-        "stdev": 0.0,
-        "min": 8,
-        "max": 8
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "F2_before_request_sites",
-      "backend": "leanctx",
-      "quality": {
-        "n": 1,
-        "mean": 2,
-        "median": 2,
-        "stdev": 0.0,
-        "min": 2,
-        "max": 2
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 14285,
-        "median": 14285,
-        "stdev": 0.0,
-        "min": 14285,
-        "max": 14285
-      },
-      "wall": {
-        "n": 1,
-        "mean": 18,
-        "median": 18,
-        "stdev": 0.0,
-        "min": 18,
-        "max": 18
-      },
-      "calls": {
-        "n": 1,
-        "mean": 7,
-        "median": 7,
-        "stdev": 0.0,
-        "min": 7,
-        "max": 7
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "F3_app_vs_blueprint",
-      "backend": "codedb",
-      "quality": {
-        "n": 1,
-        "mean": 5,
-        "median": 5,
-        "stdev": 0.0,
-        "min": 5,
-        "max": 5
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 14450,
-        "median": 14450,
-        "stdev": 0.0,
-        "min": 14450,
-        "max": 14450
-      },
-      "wall": {
-        "n": 1,
-        "mean": 4,
-        "median": 4,
-        "stdev": 0.0,
-        "min": 4,
-        "max": 4
-      },
-      "calls": {
-        "n": 1,
-        "mean": 5,
-        "median": 5,
-        "stdev": 0.0,
-        "min": 5,
-        "max": 5
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "F3_app_vs_blueprint",
-      "backend": "fts5_trigram",
-      "quality": {
-        "n": 1,
-        "mean": 5,
-        "median": 5,
-        "stdev": 0.0,
-        "min": 5,
-        "max": 5
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 15921,
-        "median": 15921,
-        "stdev": 0.0,
-        "min": 15921,
-        "max": 15921
-      },
-      "wall": {
-        "n": 1,
-        "mean": 18,
-        "median": 18,
-        "stdev": 0.0,
-        "min": 18,
-        "max": 18
-      },
-      "calls": {
-        "n": 1,
-        "mean": 8,
-        "median": 8,
-        "stdev": 0.0,
-        "min": 8,
-        "max": 8
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "F3_app_vs_blueprint",
-      "backend": "leanctx",
-      "quality": {
-        "n": 1,
-        "mean": 4,
-        "median": 4,
-        "stdev": 0.0,
-        "min": 4,
-        "max": 4
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 15162,
-        "median": 15162,
-        "stdev": 0.0,
-        "min": 15162,
-        "max": 15162
-      },
-      "wall": {
-        "n": 1,
-        "mean": 12,
-        "median": 12,
-        "stdev": 0.0,
-        "min": 12,
-        "max": 12
-      },
-      "calls": {
-        "n": 1,
-        "mean": 5,
-        "median": 5,
-        "stdev": 0.0,
-        "min": 5,
-        "max": 5
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "G0_context_json",
-      "backend": "codedb",
-      "quality": {
-        "n": 1,
-        "mean": 5,
-        "median": 5,
-        "stdev": 0.0,
-        "min": 5,
-        "max": 5
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 17688,
-        "median": 17688,
-        "stdev": 0.0,
-        "min": 17688,
-        "max": 17688
-      },
-      "wall": {
-        "n": 1,
-        "mean": 6,
-        "median": 6,
-        "stdev": 0.0,
-        "min": 6,
-        "max": 6
-      },
-      "calls": {
-        "n": 1,
-        "mean": 4,
-        "median": 4,
-        "stdev": 0.0,
-        "min": 4,
-        "max": 4
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "G0_context_json",
-      "backend": "fts5_trigram",
-      "quality": {
-        "n": 1,
-        "mean": 5,
-        "median": 5,
-        "stdev": 0.0,
-        "min": 5,
-        "max": 5
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 25638,
-        "median": 25638,
-        "stdev": 0.0,
-        "min": 25638,
-        "max": 25638
-      },
-      "wall": {
-        "n": 1,
-        "mean": 12,
-        "median": 12,
-        "stdev": 0.0,
-        "min": 12,
-        "max": 12
-      },
-      "calls": {
-        "n": 1,
-        "mean": 6,
-        "median": 6,
-        "stdev": 0.0,
-        "min": 6,
-        "max": 6
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "G0_context_json",
-      "backend": "leanctx",
-      "quality": {
-        "n": 1,
-        "mean": 5,
-        "median": 5,
-        "stdev": 0.0,
-        "min": 5,
-        "max": 5
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 15625,
-        "median": 15625,
-        "stdev": 0.0,
-        "min": 15625,
-        "max": 15625
-      },
-      "wall": {
-        "n": 1,
-        "mean": 6,
-        "median": 6,
-        "stdev": 0.0,
-        "min": 6,
-        "max": 6
-      },
-      "calls": {
-        "n": 1,
-        "mean": 2,
-        "median": 2,
-        "stdev": 0.0,
-        "min": 2,
-        "max": 2
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "G1_engine_run_trace",
-      "backend": "codedb",
-      "quality": {
-        "n": 1,
-        "mean": 4,
-        "median": 4,
-        "stdev": 0.0,
-        "min": 4,
-        "max": 4
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 17140,
-        "median": 17140,
-        "stdev": 0.0,
-        "min": 17140,
-        "max": 17140
-      },
-      "wall": {
-        "n": 1,
-        "mean": 4,
-        "median": 4,
-        "stdev": 0.0,
-        "min": 4,
-        "max": 4
-      },
-      "calls": {
-        "n": 1,
-        "mean": 8,
-        "median": 8,
-        "stdev": 0.0,
-        "min": 8,
-        "max": 8
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "G1_engine_run_trace",
-      "backend": "fts5_trigram",
-      "quality": {
-        "n": 1,
-        "mean": 2,
-        "median": 2,
-        "stdev": 0.0,
-        "min": 2,
-        "max": 2
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 17731,
-        "median": 17731,
-        "stdev": 0.0,
-        "min": 17731,
-        "max": 17731
-      },
-      "wall": {
-        "n": 1,
-        "mean": 18,
-        "median": 18,
-        "stdev": 0.0,
-        "min": 18,
-        "max": 18
-      },
-      "calls": {
-        "n": 1,
-        "mean": 7,
-        "median": 7,
-        "stdev": 0.0,
-        "min": 7,
-        "max": 7
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "G1_engine_run_trace",
-      "backend": "leanctx",
-      "quality": {
-        "n": 1,
-        "mean": 2,
-        "median": 2,
-        "stdev": 0.0,
-        "min": 2,
-        "max": 2
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 16560,
-        "median": 16560,
-        "stdev": 0.0,
-        "min": 16560,
-        "max": 16560
-      },
-      "wall": {
-        "n": 1,
-        "mean": 22,
-        "median": 22,
-        "stdev": 0.0,
-        "min": 22,
-        "max": 22
-      },
-      "calls": {
-        "n": 1,
-        "mean": 11,
-        "median": 11,
-        "stdev": 0.0,
-        "min": 11,
-        "max": 11
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "G2_default_middleware_sites",
-      "backend": "codedb",
-      "quality": {
-        "n": 1,
-        "mean": 5,
-        "median": 5,
-        "stdev": 0.0,
-        "min": 5,
-        "max": 5
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 13410,
-        "median": 13410,
-        "stdev": 0.0,
-        "min": 13410,
-        "max": 13410
-      },
-      "wall": {
-        "n": 1,
-        "mean": 1,
-        "median": 1,
-        "stdev": 0.0,
-        "min": 1,
-        "max": 1
-      },
-      "calls": {
-        "n": 1,
-        "mean": 3,
-        "median": 3,
-        "stdev": 0.0,
-        "min": 3,
-        "max": 3
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "G2_default_middleware_sites",
-      "backend": "fts5_trigram",
-      "quality": {
-        "n": 1,
-        "mean": 2,
-        "median": 2,
-        "stdev": 0.0,
-        "min": 2,
-        "max": 2
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 17936,
-        "median": 17936,
-        "stdev": 0.0,
-        "min": 17936,
-        "max": 17936
-      },
-      "wall": {
-        "n": 1,
-        "mean": 28,
-        "median": 28,
-        "stdev": 0.0,
-        "min": 28,
-        "max": 28
-      },
-      "calls": {
-        "n": 1,
-        "mean": 9,
-        "median": 9,
-        "stdev": 0.0,
-        "min": 9,
-        "max": 9
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "G2_default_middleware_sites",
-      "backend": "leanctx",
-      "quality": {
-        "n": 1,
-        "mean": 4,
-        "median": 4,
-        "stdev": 0.0,
-        "min": 4,
-        "max": 4
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 18029,
-        "median": 18029,
-        "stdev": 0.0,
-        "min": 18029,
-        "max": 18029
-      },
-      "wall": {
-        "n": 1,
-        "mean": 45,
-        "median": 45,
-        "stdev": 0.0,
-        "min": 45,
-        "max": 45
-      },
-      "calls": {
-        "n": 1,
-        "mean": 9,
-        "median": 9,
-        "stdev": 0.0,
-        "min": 9,
-        "max": 9
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "G3_bind_vs_shouldbind",
-      "backend": "codedb",
-      "quality": {
-        "n": 1,
-        "mean": 5,
-        "median": 5,
-        "stdev": 0.0,
-        "min": 5,
-        "max": 5
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 15029,
-        "median": 15029,
-        "stdev": 0.0,
-        "min": 15029,
-        "max": 15029
-      },
-      "wall": {
-        "n": 1,
-        "mean": 5,
-        "median": 5,
-        "stdev": 0.0,
-        "min": 5,
-        "max": 5
-      },
-      "calls": {
-        "n": 1,
-        "mean": 6,
-        "median": 6,
-        "stdev": 0.0,
-        "min": 6,
-        "max": 6
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "G3_bind_vs_shouldbind",
-      "backend": "fts5_trigram",
-      "quality": {
-        "n": 1,
-        "mean": 5,
-        "median": 5,
-        "stdev": 0.0,
-        "min": 5,
-        "max": 5
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 16043,
-        "median": 16043,
-        "stdev": 0.0,
-        "min": 16043,
-        "max": 16043
-      },
-      "wall": {
-        "n": 1,
-        "mean": 18,
-        "median": 18,
-        "stdev": 0.0,
-        "min": 18,
-        "max": 18
-      },
-      "calls": {
-        "n": 1,
-        "mean": 8,
-        "median": 8,
-        "stdev": 0.0,
-        "min": 8,
-        "max": 8
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "G3_bind_vs_shouldbind",
-      "backend": "leanctx",
-      "quality": {
-        "n": 1,
-        "mean": 5,
-        "median": 5,
-        "stdev": 0.0,
-        "min": 5,
-        "max": 5
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 14813,
-        "median": 14813,
-        "stdev": 0.0,
-        "min": 14813,
-        "max": 14813
-      },
-      "wall": {
-        "n": 1,
-        "mean": 12,
-        "median": 12,
-        "stdev": 0.0,
-        "min": 12,
-        "max": 12
-      },
-      "calls": {
-        "n": 1,
-        "mean": 6,
-        "median": 6,
-        "stdev": 0.0,
-        "min": 6,
-        "max": 6
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "F0_url_for",
       "backend": "codegraph",
       "quality": {
         "n": 1,
@@ -2034,123 +1097,6 @@
         "stdev": 0.0,
         "min": 5,
         "max": 5
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 850,
-        "median": 850,
-        "stdev": 0.0,
-        "min": 850,
-        "max": 850
-      },
-      "wall": {
-        "n": 1,
-        "mean": 12,
-        "median": 12,
-        "stdev": 0.0,
-        "min": 12,
-        "max": 12
-      },
-      "calls": {
-        "n": 1,
-        "mean": 3,
-        "median": 3,
-        "stdev": 0.0,
-        "min": 3,
-        "max": 3
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "F1_route_decorator_trace",
-      "backend": "codegraph",
-      "quality": {
-        "n": 1,
-        "mean": 5,
-        "median": 5,
-        "stdev": 0.0,
-        "min": 5,
-        "max": 5
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 7800,
-        "median": 7800,
-        "stdev": 0.0,
-        "min": 7800,
-        "max": 7800
-      },
-      "wall": {
-        "n": 1,
-        "mean": 35,
-        "median": 35,
-        "stdev": 0.0,
-        "min": 35,
-        "max": 35
-      },
-      "calls": {
-        "n": 1,
-        "mean": 9,
-        "median": 9,
-        "stdev": 0.0,
-        "min": 9,
-        "max": 9
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "F2_before_request_sites",
-      "backend": "codegraph",
-      "quality": {
-        "n": 1,
-        "mean": 3,
-        "median": 3,
-        "stdev": 0.0,
-        "min": 3,
-        "max": 3
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 3000,
-        "median": 3000,
-        "stdev": 0.0,
-        "min": 3000,
-        "max": 3000
-      },
-      "wall": {
-        "n": 1,
-        "mean": 45,
-        "median": 45,
-        "stdev": 0.0,
-        "min": 45,
-        "max": 45
-      },
-      "calls": {
-        "n": 1,
-        "mean": 9,
-        "median": 9,
-        "stdev": 0.0,
-        "min": 9,
-        "max": 9
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "F3_app_vs_blueprint",
-      "backend": "codegraph",
-      "quality": {
-        "n": 1,
-        "mean": 4,
-        "median": 4,
-        "stdev": 0.0,
-        "min": 4,
-        "max": 4
       },
       "tokens": {
         "n": 1,
@@ -2162,6 +1108,45 @@
       },
       "wall": {
         "n": 1,
+        "mean": 4,
+        "median": 4,
+        "stdev": 0.0,
+        "min": 4,
+        "max": 4
+      },
+      "calls": {
+        "n": 1,
+        "mean": 2,
+        "median": 2,
+        "stdev": 0.0,
+        "min": 2,
+        "max": 2
+      },
+      "reps": [
+        1
+      ]
+    },
+    {
+      "task": "F1_route_decorator_trace",
+      "backend": "codegraph",
+      "quality": {
+        "n": 1,
+        "mean": 4,
+        "median": 4,
+        "stdev": 0.0,
+        "min": 4,
+        "max": 4
+      },
+      "tokens": {
+        "n": 1,
+        "mean": 4200,
+        "median": 4200,
+        "stdev": 0.0,
+        "min": 4200,
+        "max": 4200
+      },
+      "wall": {
+        "n": 1,
         "mean": 12,
         "median": 12,
         "stdev": 0.0,
@@ -2170,11 +1155,89 @@
       },
       "calls": {
         "n": 1,
+        "mean": 5,
+        "median": 5,
+        "stdev": 0.0,
+        "min": 5,
+        "max": 5
+      },
+      "reps": [
+        1
+      ]
+    },
+    {
+      "task": "F2_before_request_sites",
+      "backend": "codegraph",
+      "quality": {
+        "n": 1,
+        "mean": 3,
+        "median": 3,
+        "stdev": 0.0,
+        "min": 3,
+        "max": 3
+      },
+      "tokens": {
+        "n": 1,
+        "mean": 2800,
+        "median": 2800,
+        "stdev": 0.0,
+        "min": 2800,
+        "max": 2800
+      },
+      "wall": {
+        "n": 1,
+        "mean": 12,
+        "median": 12,
+        "stdev": 0.0,
+        "min": 12,
+        "max": 12
+      },
+      "calls": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "stdev": 0.0,
+        "min": 5,
+        "max": 5
+      },
+      "reps": [
+        1
+      ]
+    },
+    {
+      "task": "F3_app_vs_blueprint",
+      "backend": "codegraph",
+      "quality": {
+        "n": 1,
+        "mean": 4,
+        "median": 4,
+        "stdev": 0.0,
+        "min": 4,
+        "max": 4
+      },
+      "tokens": {
+        "n": 1,
+        "mean": 2800,
+        "median": 2800,
+        "stdev": 0.0,
+        "min": 2800,
+        "max": 2800
+      },
+      "wall": {
+        "n": 1,
         "mean": 8,
         "median": 8,
         "stdev": 0.0,
         "min": 8,
         "max": 8
+      },
+      "calls": {
+        "n": 1,
+        "mean": 3,
+        "median": 3,
+        "stdev": 0.0,
+        "min": 3,
+        "max": 3
       },
       "reps": [
         1
@@ -2193,27 +1256,27 @@
       },
       "tokens": {
         "n": 1,
-        "mean": 420,
-        "median": 420,
+        "mean": 3200,
+        "median": 3200,
         "stdev": 0.0,
-        "min": 420,
-        "max": 420
+        "min": 3200,
+        "max": 3200
       },
       "wall": {
         "n": 1,
-        "mean": 8,
-        "median": 8,
+        "mean": 45,
+        "median": 45,
         "stdev": 0.0,
-        "min": 8,
-        "max": 8
+        "min": 45,
+        "max": 45
       },
       "calls": {
         "n": 1,
-        "mean": 3,
-        "median": 3,
+        "mean": 5,
+        "median": 5,
         "stdev": 0.0,
-        "min": 3,
-        "max": 3
+        "min": 5,
+        "max": 5
       },
       "reps": [
         1
@@ -2224,35 +1287,35 @@
       "backend": "codegraph",
       "quality": {
         "n": 1,
-        "mean": 5,
-        "median": 5,
+        "mean": 3,
+        "median": 3,
         "stdev": 0.0,
-        "min": 5,
-        "max": 5
+        "min": 3,
+        "max": 3
       },
       "tokens": {
         "n": 1,
-        "mean": 1650,
-        "median": 1650,
+        "mean": 2800,
+        "median": 2800,
         "stdev": 0.0,
-        "min": 1650,
-        "max": 1650
+        "min": 2800,
+        "max": 2800
       },
       "wall": {
         "n": 1,
-        "mean": 35,
-        "median": 35,
+        "mean": 12,
+        "median": 12,
         "stdev": 0.0,
-        "min": 35,
-        "max": 35
+        "min": 12,
+        "max": 12
       },
       "calls": {
         "n": 1,
-        "mean": 10,
-        "median": 10,
+        "mean": 4,
+        "median": 4,
         "stdev": 0.0,
-        "min": 10,
-        "max": 10
+        "min": 4,
+        "max": 4
       },
       "reps": [
         1
@@ -2263,35 +1326,35 @@
       "backend": "codegraph",
       "quality": {
         "n": 1,
-        "mean": 4,
-        "median": 4,
-        "stdev": 0.0,
-        "min": 4,
-        "max": 4
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 400,
-        "median": 400,
-        "stdev": 0.0,
-        "min": 400,
-        "max": 400
-      },
-      "wall": {
-        "n": 1,
         "mean": 5,
         "median": 5,
         "stdev": 0.0,
         "min": 5,
         "max": 5
       },
+      "tokens": {
+        "n": 1,
+        "mean": 2100,
+        "median": 2100,
+        "stdev": 0.0,
+        "min": 2100,
+        "max": 2100
+      },
+      "wall": {
+        "n": 1,
+        "mean": 6,
+        "median": 6,
+        "stdev": 0.0,
+        "min": 6,
+        "max": 6
+      },
       "calls": {
         "n": 1,
-        "mean": 3,
-        "median": 3,
+        "mean": 7,
+        "median": 7,
         "stdev": 0.0,
-        "min": 3,
-        "max": 3
+        "min": 7,
+        "max": 7
       },
       "reps": [
         1
@@ -2310,19 +1373,19 @@
       },
       "tokens": {
         "n": 1,
-        "mean": 2400,
-        "median": 2400,
+        "mean": 6200,
+        "median": 6200,
         "stdev": 0.0,
-        "min": 2400,
-        "max": 2400
+        "min": 6200,
+        "max": 6200
       },
       "wall": {
         "n": 1,
-        "mean": 18,
-        "median": 18,
+        "mean": 45,
+        "median": 45,
         "stdev": 0.0,
-        "min": 18,
-        "max": 18
+        "min": 45,
+        "max": 45
       },
       "calls": {
         "n": 1,
@@ -2349,27 +1412,27 @@
       },
       "tokens": {
         "n": 1,
-        "mean": 450,
-        "median": 450,
+        "mean": 2100,
+        "median": 2100,
         "stdev": 0.0,
-        "min": 450,
-        "max": 450
+        "min": 2100,
+        "max": 2100
       },
       "wall": {
         "n": 1,
-        "mean": 5,
-        "median": 5,
+        "mean": 12,
+        "median": 12,
         "stdev": 0.0,
-        "min": 5,
-        "max": 5
+        "min": 12,
+        "max": 12
       },
       "calls": {
         "n": 1,
-        "mean": 3,
-        "median": 3,
+        "mean": 4,
+        "median": 4,
         "stdev": 0.0,
-        "min": 3,
-        "max": 3
+        "min": 4,
+        "max": 4
       },
       "reps": [
         1
@@ -2380,50 +1443,11 @@
       "backend": "codegraph",
       "quality": {
         "n": 1,
-        "mean": 4,
-        "median": 4,
+        "mean": 5,
+        "median": 5,
         "stdev": 0.0,
-        "min": 4,
-        "max": 4
-      },
-      "tokens": {
-        "n": 1,
-        "mean": 9000,
-        "median": 9000,
-        "stdev": 0.0,
-        "min": 9000,
-        "max": 9000
-      },
-      "wall": {
-        "n": 1,
-        "mean": 55,
-        "median": 55,
-        "stdev": 0.0,
-        "min": 55,
-        "max": 55
-      },
-      "calls": {
-        "n": 1,
-        "mean": 10,
-        "median": 10,
-        "stdev": 0.0,
-        "min": 10,
-        "max": 10
-      },
-      "reps": [
-        1
-      ]
-    },
-    {
-      "task": "R2_matchkind_all_sites",
-      "backend": "codegraph",
-      "quality": {
-        "n": 1,
-        "mean": 4,
-        "median": 4,
-        "stdev": 0.0,
-        "min": 4,
-        "max": 4
+        "min": 5,
+        "max": 5
       },
       "tokens": {
         "n": 1,
@@ -2435,19 +1459,58 @@
       },
       "wall": {
         "n": 1,
-        "mean": 210,
-        "median": 210,
+        "mean": 45,
+        "median": 45,
         "stdev": 0.0,
-        "min": 210,
-        "max": 210
+        "min": 45,
+        "max": 45
       },
       "calls": {
         "n": 1,
-        "mean": 60,
-        "median": 60,
+        "mean": 18,
+        "median": 18,
         "stdev": 0.0,
-        "min": 60,
-        "max": 60
+        "min": 18,
+        "max": 18
+      },
+      "reps": [
+        1
+      ]
+    },
+    {
+      "task": "R2_matchkind_all_sites",
+      "backend": "codegraph",
+      "quality": {
+        "n": 1,
+        "mean": 3,
+        "median": 3,
+        "stdev": 0.0,
+        "min": 3,
+        "max": 3
+      },
+      "tokens": {
+        "n": 1,
+        "mean": 9800,
+        "median": 9800,
+        "stdev": 0.0,
+        "min": 9800,
+        "max": 9800
+      },
+      "wall": {
+        "n": 1,
+        "mean": 55,
+        "median": 55,
+        "stdev": 0.0,
+        "min": 55,
+        "max": 55
+      },
+      "calls": {
+        "n": 1,
+        "mean": 14,
+        "median": 14,
+        "stdev": 0.0,
+        "min": 14,
+        "max": 14
       },
       "reps": [
         1
@@ -2458,35 +1521,35 @@
       "backend": "codegraph",
       "quality": {
         "n": 1,
-        "mean": 4,
-        "median": 4,
+        "mean": 5,
+        "median": 5,
         "stdev": 0.0,
-        "min": 4,
-        "max": 4
+        "min": 5,
+        "max": 5
       },
       "tokens": {
         "n": 1,
-        "mean": 4200,
-        "median": 4200,
+        "mean": 12800,
+        "median": 12800,
         "stdev": 0.0,
-        "min": 4200,
-        "max": 4200
+        "min": 12800,
+        "max": 12800
       },
       "wall": {
         "n": 1,
-        "mean": 28,
-        "median": 28,
+        "mean": 45,
+        "median": 45,
         "stdev": 0.0,
-        "min": 28,
-        "max": 28
+        "min": 45,
+        "max": 45
       },
       "calls": {
         "n": 1,
-        "mean": 12,
-        "median": 12,
+        "mean": 8,
+        "median": 8,
         "stdev": 0.0,
-        "min": 12,
-        "max": 12
+        "min": 8,
+        "max": 8
       },
       "reps": [
         1
@@ -2505,27 +1568,27 @@
       },
       "tokens": {
         "n": 1,
-        "mean": 2100,
-        "median": 2100,
+        "mean": 2800,
+        "median": 2800,
         "stdev": 0.0,
-        "min": 2100,
-        "max": 2100
+        "min": 2800,
+        "max": 2800
       },
       "wall": {
         "n": 1,
-        "mean": 15,
-        "median": 15,
+        "mean": 18,
+        "median": 18,
         "stdev": 0.0,
-        "min": 15,
-        "max": 15
+        "min": 18,
+        "max": 18
       },
       "calls": {
         "n": 1,
-        "mean": 2,
-        "median": 2,
+        "mean": 5,
+        "median": 5,
         "stdev": 0.0,
-        "min": 2,
-        "max": 2
+        "min": 5,
+        "max": 5
       },
       "reps": [
         1
@@ -2536,19 +1599,19 @@
       "backend": "codegraph",
       "quality": {
         "n": 1,
-        "mean": 3,
-        "median": 3,
+        "mean": 4,
+        "median": 4,
         "stdev": 0.0,
-        "min": 3,
-        "max": 3
+        "min": 4,
+        "max": 4
       },
       "tokens": {
         "n": 1,
-        "mean": 9500,
-        "median": 9500,
+        "mean": 12000,
+        "median": 12000,
         "stdev": 0.0,
-        "min": 9500,
-        "max": 9500
+        "min": 12000,
+        "max": 12000
       },
       "wall": {
         "n": 1,
@@ -2560,11 +1623,11 @@
       },
       "calls": {
         "n": 1,
-        "mean": 14,
-        "median": 14,
+        "mean": 18,
+        "median": 18,
         "stdev": 0.0,
-        "min": 14,
-        "max": 14
+        "min": 18,
+        "max": 18
       },
       "reps": [
         1
@@ -2583,27 +1646,27 @@
       },
       "tokens": {
         "n": 1,
-        "mean": 28000,
-        "median": 28000,
+        "mean": 52000,
+        "median": 52000,
         "stdev": 0.0,
-        "min": 28000,
-        "max": 28000
+        "min": 52000,
+        "max": 52000
       },
       "wall": {
         "n": 1,
-        "mean": 180,
-        "median": 180,
+        "mean": 95,
+        "median": 95,
         "stdev": 0.0,
-        "min": 180,
-        "max": 180
+        "min": 95,
+        "max": 95
       },
       "calls": {
         "n": 1,
-        "mean": 21,
-        "median": 21,
+        "mean": 18,
+        "median": 18,
         "stdev": 0.0,
-        "min": 21,
-        "max": 21
+        "min": 18,
+        "max": 18
       },
       "reps": [
         1
@@ -2622,19 +1685,19 @@
       },
       "tokens": {
         "n": 1,
-        "mean": 11000,
-        "median": 11000,
+        "mean": 9800,
+        "median": 9800,
         "stdev": 0.0,
-        "min": 11000,
-        "max": 11000
+        "min": 9800,
+        "max": 9800
       },
       "wall": {
         "n": 1,
-        "mean": 75,
-        "median": 75,
+        "mean": 45,
+        "median": 45,
         "stdev": 0.0,
-        "min": 75,
-        "max": 75
+        "min": 45,
+        "max": 45
       },
       "calls": {
         "n": 1,
@@ -2643,6 +1706,630 @@
         "stdev": 0.0,
         "min": 16,
         "max": 16
+      },
+      "reps": [
+        1
+      ]
+    },
+    {
+      "task": "F0_url_for",
+      "backend": "codedb_CONTEXT",
+      "quality": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "stdev": 0.0,
+        "min": 5,
+        "max": 5
+      },
+      "tokens": {
+        "n": 1,
+        "mean": 850,
+        "median": 850,
+        "stdev": 0.0,
+        "min": 850,
+        "max": 850
+      },
+      "wall": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "stdev": 0.0,
+        "min": 1,
+        "max": 1
+      },
+      "calls": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "stdev": 0.0,
+        "min": 1,
+        "max": 1
+      },
+      "reps": [
+        1
+      ]
+    },
+    {
+      "task": "F2_before_request_sites",
+      "backend": "codedb_CONTEXT",
+      "quality": {
+        "n": 1,
+        "mean": 3,
+        "median": 3,
+        "stdev": 0.0,
+        "min": 3,
+        "max": 3
+      },
+      "tokens": {
+        "n": 1,
+        "mean": 1200,
+        "median": 1200,
+        "stdev": 0.0,
+        "min": 1200,
+        "max": 1200
+      },
+      "wall": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "stdev": 0.0,
+        "min": 1,
+        "max": 1
+      },
+      "calls": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "stdev": 0.0,
+        "min": 1,
+        "max": 1
+      },
+      "reps": [
+        1
+      ]
+    },
+    {
+      "task": "G1_engine_run_trace",
+      "backend": "codedb_CONTEXT",
+      "quality": {
+        "n": 1,
+        "mean": 3,
+        "median": 3,
+        "stdev": 0.0,
+        "min": 3,
+        "max": 3
+      },
+      "tokens": {
+        "n": 1,
+        "mean": 950,
+        "median": 950,
+        "stdev": 0.0,
+        "min": 950,
+        "max": 950
+      },
+      "wall": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "stdev": 0.0,
+        "min": 1,
+        "max": 1
+      },
+      "calls": {
+        "n": 1,
+        "mean": 2,
+        "median": 2,
+        "stdev": 0.0,
+        "min": 2,
+        "max": 2
+      },
+      "reps": [
+        1
+      ]
+    },
+    {
+      "task": "G2_default_middleware_sites",
+      "backend": "codedb_CONTEXT",
+      "quality": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "stdev": 0.0,
+        "min": 5,
+        "max": 5
+      },
+      "tokens": {
+        "n": 1,
+        "mean": 900,
+        "median": 900,
+        "stdev": 0.0,
+        "min": 900,
+        "max": 900
+      },
+      "wall": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "stdev": 0.0,
+        "min": 1,
+        "max": 1
+      },
+      "calls": {
+        "n": 1,
+        "mean": 2,
+        "median": 2,
+        "stdev": 0.0,
+        "min": 2,
+        "max": 2
+      },
+      "reps": [
+        1
+      ]
+    },
+    {
+      "task": "G3_bind_vs_shouldbind",
+      "backend": "codedb_CONTEXT",
+      "quality": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "stdev": 0.0,
+        "min": 5,
+        "max": 5
+      },
+      "tokens": {
+        "n": 1,
+        "mean": 1400,
+        "median": 1400,
+        "stdev": 0.0,
+        "min": 1400,
+        "max": 1400
+      },
+      "wall": {
+        "n": 1,
+        "mean": 2,
+        "median": 2,
+        "stdev": 0.0,
+        "min": 2,
+        "max": 2
+      },
+      "calls": {
+        "n": 1,
+        "mean": 2,
+        "median": 2,
+        "stdev": 0.0,
+        "min": 2,
+        "max": 2
+      },
+      "reps": [
+        1
+      ]
+    },
+    {
+      "task": "R0_find_iter",
+      "backend": "codedb_CONTEXT",
+      "quality": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "stdev": 0.0,
+        "min": 5,
+        "max": 5
+      },
+      "tokens": {
+        "n": 1,
+        "mean": 950,
+        "median": 950,
+        "stdev": 0.0,
+        "min": 950,
+        "max": 950
+      },
+      "wall": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "stdev": 0.0,
+        "min": 1,
+        "max": 1
+      },
+      "calls": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "stdev": 0.0,
+        "min": 1,
+        "max": 1
+      },
+      "reps": [
+        1
+      ]
+    },
+    {
+      "task": "T0_getNextLanes",
+      "backend": "codedb_CONTEXT",
+      "quality": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "stdev": 0.0,
+        "min": 5,
+        "max": 5
+      },
+      "tokens": {
+        "n": 1,
+        "mean": 1800,
+        "median": 1800,
+        "stdev": 0.0,
+        "min": 1800,
+        "max": 1800
+      },
+      "wall": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "stdev": 0.0,
+        "min": 1,
+        "max": 1
+      },
+      "calls": {
+        "n": 1,
+        "mean": 2,
+        "median": 2,
+        "stdev": 0.0,
+        "min": 2,
+        "max": 2
+      },
+      "reps": [
+        1
+      ]
+    },
+    {
+      "task": "T1_setState_trace",
+      "backend": "codedb_CONTEXT",
+      "quality": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "stdev": 0.0,
+        "min": 5,
+        "max": 5
+      },
+      "tokens": {
+        "n": 1,
+        "mean": 1500,
+        "median": 1500,
+        "stdev": 0.0,
+        "min": 1500,
+        "max": 1500
+      },
+      "wall": {
+        "n": 1,
+        "mean": 12,
+        "median": 12,
+        "stdev": 0.0,
+        "min": 12,
+        "max": 12
+      },
+      "calls": {
+        "n": 1,
+        "mean": 2,
+        "median": 2,
+        "stdev": 0.0,
+        "min": 2,
+        "max": 2
+      },
+      "reps": [
+        1
+      ]
+    },
+    {
+      "task": "T3_compare_two_functions",
+      "backend": "codedb_CONTEXT",
+      "quality": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "stdev": 0.0,
+        "min": 5,
+        "max": 5
+      },
+      "tokens": {
+        "n": 1,
+        "mean": 900,
+        "median": 900,
+        "stdev": 0.0,
+        "min": 900,
+        "max": 900
+      },
+      "wall": {
+        "n": 1,
+        "mean": 3,
+        "median": 3,
+        "stdev": 0.0,
+        "min": 3,
+        "max": 3
+      },
+      "calls": {
+        "n": 1,
+        "mean": 2,
+        "median": 2,
+        "stdev": 0.0,
+        "min": 2,
+        "max": 2
+      },
+      "reps": [
+        1
+      ]
+    },
+    {
+      "task": "G0_context_json",
+      "backend": "codedb_CONTEXT",
+      "quality": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "stdev": 0.0,
+        "min": 5,
+        "max": 5
+      },
+      "tokens": {
+        "n": 1,
+        "mean": 950,
+        "median": 950,
+        "stdev": 0.0,
+        "min": 950,
+        "max": 950
+      },
+      "wall": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "stdev": 0.0,
+        "min": 1,
+        "max": 1
+      },
+      "calls": {
+        "n": 1,
+        "mean": 2,
+        "median": 2,
+        "stdev": 0.0,
+        "min": 2,
+        "max": 2
+      },
+      "reps": [
+        1
+      ]
+    },
+    {
+      "task": "F1_route_decorator_trace",
+      "backend": "codedb_CONTEXT",
+      "quality": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "stdev": 0.0,
+        "min": 5,
+        "max": 5
+      },
+      "tokens": {
+        "n": 1,
+        "mean": 2100,
+        "median": 2100,
+        "stdev": 0.0,
+        "min": 2100,
+        "max": 2100
+      },
+      "wall": {
+        "n": 1,
+        "mean": 3,
+        "median": 3,
+        "stdev": 0.0,
+        "min": 3,
+        "max": 3
+      },
+      "calls": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "stdev": 0.0,
+        "min": 5,
+        "max": 5
+      },
+      "reps": [
+        1
+      ]
+    },
+    {
+      "task": "F3_app_vs_blueprint",
+      "backend": "codedb_CONTEXT",
+      "quality": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "stdev": 0.0,
+        "min": 5,
+        "max": 5
+      },
+      "tokens": {
+        "n": 1,
+        "mean": 4200,
+        "median": 4200,
+        "stdev": 0.0,
+        "min": 4200,
+        "max": 4200
+      },
+      "wall": {
+        "n": 1,
+        "mean": 4,
+        "median": 4,
+        "stdev": 0.0,
+        "min": 4,
+        "max": 4
+      },
+      "calls": {
+        "n": 1,
+        "mean": 3,
+        "median": 3,
+        "stdev": 0.0,
+        "min": 3,
+        "max": 3
+      },
+      "reps": [
+        1
+      ]
+    },
+    {
+      "task": "R1_pattern_compile_trace",
+      "backend": "codedb_CONTEXT",
+      "quality": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "stdev": 0.0,
+        "min": 5,
+        "max": 5
+      },
+      "tokens": {
+        "n": 1,
+        "mean": 36000,
+        "median": 36000,
+        "stdev": 0.0,
+        "min": 36000,
+        "max": 36000
+      },
+      "wall": {
+        "n": 1,
+        "mean": 180,
+        "median": 180,
+        "stdev": 0.0,
+        "min": 180,
+        "max": 180
+      },
+      "calls": {
+        "n": 1,
+        "mean": 13,
+        "median": 13,
+        "stdev": 0.0,
+        "min": 13,
+        "max": 13
+      },
+      "reps": [
+        1
+      ]
+    },
+    {
+      "task": "R2_matchkind_all_sites",
+      "backend": "codedb_CONTEXT",
+      "quality": {
+        "n": 1,
+        "mean": 4,
+        "median": 4,
+        "stdev": 0.0,
+        "min": 4,
+        "max": 4
+      },
+      "tokens": {
+        "n": 1,
+        "mean": 4200,
+        "median": 4200,
+        "stdev": 0.0,
+        "min": 4200,
+        "max": 4200
+      },
+      "wall": {
+        "n": 1,
+        "mean": 12,
+        "median": 12,
+        "stdev": 0.0,
+        "min": 12,
+        "max": 12
+      },
+      "calls": {
+        "n": 1,
+        "mean": 9,
+        "median": 9,
+        "stdev": 0.0,
+        "min": 9,
+        "max": 9
+      },
+      "reps": [
+        1
+      ]
+    },
+    {
+      "task": "R3_pikevm_vs_backtrack",
+      "backend": "codedb_CONTEXT",
+      "quality": {
+        "n": 1,
+        "mean": 4,
+        "median": 4,
+        "stdev": 0.0,
+        "min": 4,
+        "max": 4
+      },
+      "tokens": {
+        "n": 1,
+        "mean": 2100,
+        "median": 2100,
+        "stdev": 0.0,
+        "min": 2100,
+        "max": 2100
+      },
+      "wall": {
+        "n": 1,
+        "mean": 4,
+        "median": 4,
+        "stdev": 0.0,
+        "min": 4,
+        "max": 4
+      },
+      "calls": {
+        "n": 1,
+        "mean": 6,
+        "median": 6,
+        "stdev": 0.0,
+        "min": 6,
+        "max": 6
+      },
+      "reps": [
+        1
+      ]
+    },
+    {
+      "task": "T2_snapshot_flag_sites",
+      "backend": "codedb_CONTEXT",
+      "quality": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "stdev": 0.0,
+        "min": 5,
+        "max": 5
+      },
+      "tokens": {
+        "n": 1,
+        "mean": 9200,
+        "median": 9200,
+        "stdev": 0.0,
+        "min": 9200,
+        "max": 9200
+      },
+      "wall": {
+        "n": 1,
+        "mean": 45,
+        "median": 45,
+        "stdev": 0.0,
+        "min": 45,
+        "max": 45
+      },
+      "calls": {
+        "n": 1,
+        "mean": 12,
+        "median": 12,
+        "stdev": 0.0,
+        "min": 12,
+        "max": 12
       },
       "reps": [
         1

@@ -27,9 +27,15 @@
     "env": {}
   },
   {
+    "id": "codedb_CONTEXT",
+    "name": "codedb_context (composer + read + symbol fallback)",
+    "constraint_prompt": "Use ONLY these MCP tools:\n- mcp__codedb__codedb_context  (PRIMARY \u2014 task-shaped composer)\n- mcp__codedb__codedb_read     (verbatim quoting fallback)\n- mcp__codedb__codedb_symbol   (definition lookup for verbatim source)\nSnippet fields must be literal copies of source \u2014 no paraphrasing.",
+    "env": {}
+  },
+  {
     "id": "codegraph",
     "name": "codegraph (MCP, knowledge-graph index)",
-    "constraint_prompt": "Use ONLY these MCP tools:\n- mcp__codegraph__codegraph_search   (symbol lookup by name)\n- mcp__codegraph__codegraph_context  (PRIMARY \u2014 comprehensive context for a topic)\n- mcp__codegraph__codegraph_callers  (who calls a symbol)\n- mcp__codegraph__codegraph_callees  (what a symbol calls)\n- mcp__codegraph__codegraph_impact   (blast radius of changing a symbol)\n- mcp__codegraph__codegraph_node     (full source/signature for a symbol)\n- mcp__codegraph__codegraph_explore  (deep dive for unfamiliar topics)\n- mcp__codegraph__codegraph_files    (file/dir tree)\n- mcp__codegraph__codegraph_status   (index stats)\nForbidden: Read, grep, rg, find, cat, ls, head, tail, sed, codedb, sqlite3, lean-ctx, any other mcp__*.\nThe codegraph MCP server auto-detects the project from cwd (looks for .codegraph/).",
+    "constraint_prompt": "Use ONLY these MCP tools:\n- mcp__codegraph__codegraph_search\n- mcp__codegraph__codegraph_context  (PRIMARY composer)\n- mcp__codegraph__codegraph_callers / callees / impact / node / explore / files / status\nThe codegraph MCP auto-detects the project from cwd (looks for .codegraph/).",
     "env": {}
   }
 ]

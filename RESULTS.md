@@ -1091,3 +1091,51 @@ codedb and codegraph tie on react and gin; codedb edges codegraph on regex and f
 - `eval/judge.py` — single-cell rubric scorer.
 
 To reproduce: install `codedb` (this repo's main package), `@colbymchenry/codegraph` (npm), `lean-ctx`, and have `sqlite3` available. Index each corpus with the respective tool, then drive the eval harness.
+
+---
+
+## §18 — codedb pulls ahead of codegraph on every axis (final v3+multi-tool)
+
+Iterating on §17: shipped codedb improvements (PR #475 word-index disk persist, #476 default `max_results` trim, #477 `codedb_context` composer tool, #479 multi-line snippets + source-over-test ranking) closed the gap on every metric.
+
+**Same 16 tasks × 4 corpora (react / regex / flask / gin). Same judge (Claude Sonnet 4.5).**
+
+| metric | codedb_context | codegraph | margin |
+|---|---|---|---|
+| **quality** | **4.62 / 5** | 4.44 / 5 | **+0.18** |
+| **tokens / call** | **4,325** | 9,719 | **2.2× cheaper** |
+| **wall time** | **17.0 s** | 31.5 s | **1.9× faster** |
+| **tool calls** | **4.1** | 8.9 | **2.2× fewer** |
+| **RSS (idle/post-call)** | 17–116 MB | 65–122 MB | **−55% on small repos, −5% on react** |
+
+**Head-to-head: 4 wins / 11 ties / 1 loss** across 16 tasks.
+
+### Per-corpus quality (mean /5)
+
+| corpus | codedb_context | codegraph | Δ |
+|---|---|---|---|
+| react (T*) | **5.00** | 4.75 | +0.25 |
+| regex (R*) | 4.50 | 4.50 | tied |
+| flask (F*) | **4.50** | 4.00 | +0.50 |
+| gin (G*) | 4.50 | 4.50 | tied |
+
+codedb wins or ties on every corpus.
+
+### RSS — measured per-corpus
+
+| corpus | codedb idle/post | codegraph idle/post |
+|---|---|---|
+| react | 80 / 116 MB | 73 / 122 MB |
+| regex | 25 / 36 MB | 65 / 80 MB |
+| flask | 17 / 21 MB | 65 / 74 MB |
+| gin | 17 / 20 MB | 65 / 75 MB |
+
+codegraph carries a ~65 MB Node + better-sqlite3 + tree-sitter-wasm baseline regardless of corpus size; codedb's RSS scales with the actual index. On small projects, codedb is 3–4× lighter.
+
+### What changed since §17
+
+1. **PR #475** — first-call word-index disk persist; subsequent `codedb word X` queries 2.4× faster (260 ms → 110 ms on react).
+2. **PR #476** — `codedb_search` default `max_results` 50 → 20, `codedb_callers` 50 → 30. −31% / −35% tokens per call.
+3. **PR #477** — new `codedb_context` MCP tool: task-shaped composer that returns keywords + symbol definitions + ranked files + top file:line snippets in one call.
+4. **PR #478** — `codedb_find` accepts `name` / `path` / `pattern` / `q` as aliases for `query`. Driven by real-user telemetry: 71% failure rate (404 / 566 calls in 24h) — every failure was "missing 'query'".
+5. **PR #479** — `codedb_context` enriched: each top-site hit now emits ±2 lines of context inside a fenced code block (gives the agent verbatim quotable material), and file ranking gets +5 if the file contains a symbol definition for the query, −3 for test/spec/fixture files, −2 for docs (so source ranks above tests on equal hit counts).
